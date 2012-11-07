@@ -32,8 +32,8 @@ import sublime, sublime_plugin, os, shutil
 class magentoTemplateCopyCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
-        currentTheme = sublime.active_window().active_view().settings().get('tc_theme', plugin_settings.get('tc_theme'))
-        magentoEnterprise = sublime.active_window().active_view().settings().get('tc_enterprise', plugin_settings.get('tc_enterprise'))
+        currentTheme = sublime.active_window().active_view().settings().get('tc_theme')
+        magentoEnterprise = sublime.active_window().active_view().settings().get('tc_enterprise')
 
         def open_targetFile(TARGET):
             if os.path.isfile(TARGET):
