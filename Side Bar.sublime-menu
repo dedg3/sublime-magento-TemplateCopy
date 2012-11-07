@@ -1,0 +1,7 @@
+[
+	{ "caption": "-" },
+	{
+		"caption": "Magento - TemplateCopy",
+		"command": "magento_template_copy"
+	}
+]
